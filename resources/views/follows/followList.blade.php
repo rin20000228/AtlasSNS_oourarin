@@ -1,7 +1,7 @@
 @extends('layouts.login')
 
 @section('content')
-<div class="followlist-container">
+<div class="followlist_container">
 
   <h2>Follow List</h2>
   <div class="followlist-content">
@@ -25,7 +25,7 @@
       </ul>
     </div>
     <ul>
-      <li class="post-detail">{{ $post->post }}</li>
+      <li class="followList-post">{{ $post->post }}</li>
     </ul>
   </div>
   @endforeach

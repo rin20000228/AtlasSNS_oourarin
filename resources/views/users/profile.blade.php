@@ -7,7 +7,7 @@
 <div class="profile_container">
   @csrf
   <div class="myProfile-content">
-    <div class="profile_icon">
+    <div class="profile-icon">
       <img src="{{ \Storage::url(Auth::user()->images) }}" alt="プロフィールアイコン" width="45">
     </div>
     <div class="profile-items">

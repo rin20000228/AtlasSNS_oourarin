@@ -46,6 +46,7 @@ header {
 
 .accordion-push {
     position: relative;
+    cursor: pointer;
 }
 
 .accordion-push:after {
@@ -77,7 +78,8 @@ header {
     right: 0;
     width: 290px;
     height: 300px;
-    z-index: 2;
+    z-index: 3;
+    cursor: pointer;
 }
 
 .menu-items li a {
@@ -138,7 +140,7 @@ header {
     height: 100vmax;
     font-size: 15px;
     max-width: 300px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .side-name {
@@ -148,7 +150,6 @@ header {
 #confirm {
     padding: 20px;
     border-bottom: 1px solid #727272;
-    max-width: 300px;
 }
 
 .auth_username {
@@ -187,7 +188,7 @@ header {
     text-align: center;
     display: inline-block;
     margin-top: 30px;
-    margin-left: 60px;
+    margin-left: 80px;
     font-size: 15px;
 }
 
@@ -251,8 +252,7 @@ header {
 /* top */
 .form-container {
     display: flex;
-    /*justify-content: space-evenly;*/
-    position: relative;
+    padding-top: 20px;
     align-items: center;
     border-bottom: 7px solid #d3d3d3;
 }
@@ -314,20 +314,21 @@ header {
 }
 
 .post-username {
+    padding-top: 10px;
     padding-left: 20px;
     font-size: 15px;
 
 }
 
 .post-time {
-    font-size: 13px;
+    font-size: 15px;
     right: 0;
     position: absolute;
     right: 30px;
 }
 
 .post-detail {
-    padding-left: 67px;
+    padding-left: 60px;
     font-size: 15px;
 }
 
@@ -384,7 +385,7 @@ header {
     margin-top: 40px;
 }
 
-.profile_icon {
+.profile-icon {
     margin-left: 100px;
     margin-top: 50px;
 }
@@ -419,9 +420,10 @@ input[type="file"] {
     position: absolute;
     width: 30%;
     margin-top: 20px;
-    left: 600px;
+    left: 580px;
     opacity: 0;
     z-index: 2;
+    cursor: pointer;
 }
 
 .img-update {
@@ -453,50 +455,42 @@ input[type="file"] {
     border: none;
     margin-top: 30px;
     margin-left: 500px;
+    cursor: pointer;
 }
 
 /* 相手ユーザーのプロフィール　*/
-/* ヘッダー　*/
-.followlist-icon {
-    display: flex;
-}
-
-.profile_content {
+.other-container {
     border-bottom: 7px solid #d3d3d3;
     margin-top: 50px;
     padding-bottom: 30px;
     padding-left: 100px;
+}
+
+.profile-content {
     display: flex;
 }
 
-.profile_name {
+.profile-top {
     display: flex;
-    position: absolute;
-    top: 140px;
-    left: 170px;
 }
 
-.profile_bio {
+.profile-name {
     display: flex;
-    position: absolute;
-    top: 190px;
-    left: 170px;
-}
-
-.username,
-.bio {
-    padding-left: 100px;
-}
-
-.profile_content li {
     margin-left: 30px;
 }
 
-.profile-btn {
+.profile-bio {
     display: flex;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
-.profile_unfollow_input {
+.name,
+.bio {
+    width: 200px;
+}
+
+.profile_unfollow-input {
     background-color: #f33;
     text-decoration: none;
     padding: 10px 20px;
@@ -504,11 +498,10 @@ input[type="file"] {
     text-align: center;
     font-size: 15px;
     border: none;
-    margin-left: 600px;
-    margin-top: 40px;
+    margin-left: 250px;
 }
 
-.profile_follow_input {
+.profile_follow-input {
     background-color: #39f;
     text-decoration: none;
     padding: 10px 20px;
@@ -516,31 +509,35 @@ input[type="file"] {
     text-align: center;
     font-size: 15px;
     border: none;
-    margin-left: 600px;
-    margin-top: 40px;
+    margin-left: 250px;
 }
 
-.profile_unfollow_input a,
-.profile_follow_input a {
+.profile_unfollow-input a,
+.profile_follow-input a {
     color: #fff;
 }
 
-.otherProfile_post {
+.otherProfile-post {
     padding-top: 30px;
     padding-bottom: 40px;
     padding-left: 200px;
     border-bottom: 1px solid #888;
+    display: flex;
 }
 
-.profile_post-flex {
+.otherPost-flex {
     display: flex;
 }
 
 .profile_post-time {
     font-size: 13px;
-    right: 0;
     position: absolute;
-    right: 300px;
+    right: 320px;
+}
+
+.other-post {
+    font-size: 15px;
+    padding: 20px;
 }
 
 /* ユーザー検索 */
@@ -628,11 +625,11 @@ input[type="file"] {
 }
 
 /* フォローリスト　*/
-.followlist-container {
-    padding-top: 20px;
+.followlist_container {
+    padding-top: 30px;
 }
 
-.followlist-container h2 {
+.followlist_container h2 {
     padding-left: 50px;
     font-size: 20px;
 }
@@ -640,7 +637,7 @@ input[type="file"] {
 .followlist-content {
     flex-wrap: wrap;
     width: 40%;
-    top: 90px;
+    top: 110px;
     left: 250px;
     position: absolute;
 }
@@ -653,9 +650,16 @@ input[type="file"] {
     position: relative;
 }
 
+.followList-post,
+.followerList-post {
+    padding-left: 68px;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
 /* フォロワーリスト */
 .followerlist-container {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .followerlist-container h2 {
@@ -667,8 +671,8 @@ input[type="file"] {
     flex-wrap: wrap;
     width: 40%;
     position: absolute;
-    top: 90px;
-    left: 200px;
+    top: 110px;
+    left: 250px;
 }
 
 .followerlist-item {

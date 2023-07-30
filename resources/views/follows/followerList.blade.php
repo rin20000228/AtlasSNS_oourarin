@@ -27,7 +27,7 @@
       </ul>
     </div>
     <ul>
-      <li class="post-detail">{{ $post->post }}</li>
+      <li class="followerList-post">{{ $post->post }}</li>
     </ul>
   </div>
   @endforeach
