@@ -140,7 +140,6 @@ header {
     height: 100vmax;
     font-size: 15px;
     max-width: 300px;
-    z-index: 2;
 }
 
 .side-name {
@@ -269,12 +268,13 @@ header {
 .post {
     display: block;
     border: none;
-    opacity: 30%;
-    margin-bottom: 45px;
-    width: 600px;
+    opacity: 50%;
+    width: 500px;
     height: 100px;
-    flex-wrap: nowrap;
+    white-space: pre-wrap;
+    margin-right: 40px;
 }
+
 
 .btn-success {
     width: 40px;
@@ -330,6 +330,8 @@ header {
 .post-detail {
     padding-left: 60px;
     font-size: 15px;
+    width: 500px;
+    flex-wrap: wrap;
 }
 
 /* 削除ボタン */
@@ -538,6 +540,8 @@ input[type="file"] {
 .other-post {
     font-size: 15px;
     padding: 20px;
+    width: 500px;
+    flex-wrap: wrap;
 }
 
 /* ユーザー検索 */

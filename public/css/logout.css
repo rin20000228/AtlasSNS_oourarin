@@ -50,8 +50,8 @@ header p {
 }
 
 .login-items {
-    padding: 30px 5px;
-    margin-bottom: 100px;
+    padding: 20px 5px;
+    margin-bottom: 70px;
 }
 
 .form-text {
@@ -107,7 +107,7 @@ header p {
     background-color: #ec384e;
     border-radius: 5px;
     display: inline-block;
-    margin: 20px 160px;
+    margin: 10px 150px;
     padding: 5px 10px;
     color: #fff;
     font-size: 18px;
@@ -123,6 +123,20 @@ header p {
     right: 50px;
 }
 
+.register-background {
+    background-color: rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    width: 300px;
+}
+
+.register-label {
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 0;
+    font-size: 14px;
+}
+
 #clear {
     margin: 0;
 }
@@ -132,8 +146,9 @@ header p {
     border-radius: 10px;
     text-align: center;
     width: 300px;
+    margin: auto;
+    left: 50%;
     padding: 20px 0;
-    margin: 100px auto auto 570px;
     line-height: 30px;
 }
 

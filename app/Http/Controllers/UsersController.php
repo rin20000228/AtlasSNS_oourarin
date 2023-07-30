@@ -27,7 +27,7 @@ class UsersController extends Controller
         $request->validate([
             'username' => 'required|string|max:255',
             'mail' => 'required|string|email|max:255|unique:users,mail,' . $user->id . 'id',
-            'bio' => 'string|max:150',
+            'bio' => 'nullable|string|max:150',
             'password' => 'alpha_num|min:8|max:20|confirmed',
             'image' => 'image|mimes:jpeg,png,jpg,gif'
         ]);
