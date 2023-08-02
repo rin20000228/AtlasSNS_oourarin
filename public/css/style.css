@@ -331,7 +331,7 @@ header {
     padding-left: 60px;
     font-size: 15px;
     width: 500px;
-    flex-wrap: wrap;
+    word-wrap: break-word;
 }
 
 /* 削除ボタン */
