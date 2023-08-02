@@ -10,7 +10,7 @@
 <div class="form-container">
   <img class="auth-icon" src="{{ \Storage::url(Auth::user()->images) }}" alt="アイコン" width="50">
   <!--引数：①入力のtype属性②name属性の指定：posで渡す名前になりコントローラーのリクエスト受け取る際の名称③フォーム内の初期値の指定④その他-->
-  <span>{{Form::textarea('post', null, ['required', 'class' => 'post', 'placeholder' => '投稿内容を入力してください。'])}}</span>
+  {{ Form::textarea('post', null, ['required', 'class' => 'post', 'placeholder' => '投稿内容を入力してください.', 'style' => 'white-space: pre-line;']) }}
   <div class="form-btn-container">
     <button input="submit" class="post-btn" href="">
       <img class="btn-success" src="images/post.png" alt="送信">
@@ -35,7 +35,7 @@
       </ul>
     </div>
     <ul>
-      <li class="post-detail">{{ $post->post }}</li>
+      <li class="post-detail">{!! nl2br(e($post->post)) !!}</li>
     </ul>
     <!-- ログインユーザーのIDと投稿のIDが一致した時、編集と削除が行える -->
     @if(Auth::user()->id == $post->user->id)
