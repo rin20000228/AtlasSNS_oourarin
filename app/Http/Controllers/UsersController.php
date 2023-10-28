@@ -48,10 +48,9 @@ class UsersController extends Controller
         } else {
             //空の場合はデフォルトを維持する
             $img = $user->images;
-            // 元の値を再度保存
+            //元の値を再度保存
             $user->update(['images' => $img]);
         }
-
 
         //↓パスワードの更新↓
         //$requestの中にパスワードが送られてきているかつパスワードが入力されていたら更新を行う

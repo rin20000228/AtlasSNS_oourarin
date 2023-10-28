@@ -41,7 +41,7 @@ class User extends Authenticatable
 
     public function follow()
     {
-        //①どのクラスの②どのテーブルで③following_idが④followed_idをフォローしている(following)
+        //①相手のクラス②中間テーブル③自分のカラム④相手のカラム
         //フォローする時に動く
         return $this->belongsToMany('App\User', 'follows', 'following_id', 'followed_id');
     }

@@ -347,7 +347,7 @@ header {
     display: inline-block;
 }
 
-/* 画像とinput要素を重ねるために絶対配置を設定 */
+/* 画像とinput要素を重ねるために絶対配置を設定する */
 .postUpdate_img {
     position: relative;
     display: inline-block;
@@ -363,6 +363,7 @@ header {
     width: 100%;
     height: 100%;
     opacity: 0;
+    cursor: pointer;
 }
 
 /* ホバー時に非表示にするクラス */

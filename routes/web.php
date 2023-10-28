@@ -36,7 +36,7 @@ Route::group(['middleware' => 'auth'], function () {
   //ログイン中のページ
   Route::get('/top', 'PostsController@index');
 
-  //ユーザー検索
+//ユーザー検索
   Route::get('/search', 'UsersController@search');
   Route::get('/follow-list', 'PostsController@index');
 
